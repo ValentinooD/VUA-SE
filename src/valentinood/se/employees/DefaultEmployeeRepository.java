@@ -9,7 +9,7 @@ public class DefaultEmployeeRepository implements EmployeeRepository {
 
     private final HashMap<String, Employee> employees;
 
-    public DefaultEmployeeRepository() {
+    DefaultEmployeeRepository() {
         employees = new HashMap<>();
     }
 

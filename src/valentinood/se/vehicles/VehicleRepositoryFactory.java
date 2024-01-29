@@ -7,6 +7,9 @@ public final class VehicleRepositoryFactory {
         repository = new DefaultVehicleRepository();
     }
 
+    private VehicleRepositoryFactory() {
+    }
+
     public static VehicleRepository getRepository() {
         return repository;
     }

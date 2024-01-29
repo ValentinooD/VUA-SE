@@ -7,6 +7,9 @@ public final class EmployeeRepositoryFactory {
         repository = new DefaultEmployeeRepository();
     }
 
+    private EmployeeRepositoryFactory() {
+    }
+
     public static EmployeeRepository getRepository() {
         return repository;
     }

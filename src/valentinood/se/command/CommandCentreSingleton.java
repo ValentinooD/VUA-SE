@@ -4,7 +4,7 @@ import valentinood.se.command.commands.*;
 
 import java.util.HashMap;
 
-public final class CommandSingletonRepository {
+public final class CommandCentreSingleton {
     private static final HashMap<String, Command> commandsMap = new HashMap<>();
     private static final InvalidCommand INVALID_COMMAND = new InvalidCommand();
 
@@ -14,6 +14,9 @@ public final class CommandSingletonRepository {
         addCommand(new ArriveCommand());
         addCommand(new TicketCommand());
         addCommand(new EmployeeCommand());
+    }
+
+    CommandCentreSingleton() {
     }
 
     public static Command getCommand(String command) {

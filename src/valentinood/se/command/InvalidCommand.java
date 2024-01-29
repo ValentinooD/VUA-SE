@@ -1,7 +1,7 @@
 package valentinood.se.command;
 
 public class InvalidCommand extends Command {
-    public InvalidCommand() {
+    InvalidCommand() {
         super(null);
     }
 

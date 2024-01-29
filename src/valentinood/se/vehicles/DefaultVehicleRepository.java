@@ -14,7 +14,7 @@ public class DefaultVehicleRepository implements VehicleRepository {
     private final List<Vehicle> departed = new ArrayList<>();
     private final List<Vehicle> arrived = new ArrayList<>();
 
-    public DefaultVehicleRepository() {
+    DefaultVehicleRepository() {
         employeeRepository = EmployeeRepositoryFactory.getRepository();
     }
 

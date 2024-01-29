@@ -5,7 +5,7 @@ import valentinood.se.command.Command;
 public class HelpCommand extends Command {
 
     public HelpCommand() {
-        super("help", "h");
+        super("help", "h", "?");
     }
 
     @Override

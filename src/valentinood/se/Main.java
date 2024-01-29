@@ -1,6 +1,6 @@
 package valentinood.se;
 
-import valentinood.se.command.CommandSingletonRepository;
+import valentinood.se.command.CommandCentreSingleton;
 import valentinood.se.employees.EmployeeRepositoryFactory;
 import valentinood.se.models.Employee;
 import valentinood.se.models.LargeTrain;
@@ -24,7 +24,6 @@ public class Main {
         System.out.println();
         System.out.println();
         System.out.println("Train station of Zagreb - best station");
-        System.out.println();
 
         while (true) {
             System.out.print("> ");
@@ -35,7 +34,7 @@ public class Main {
             if (cmdArgs[0].isEmpty()) cmdArgs = new String[] {};
 
             if (!command.equals("exit")) {
-                CommandSingletonRepository.getCommand(command.toLowerCase()).execute(cmdArgs);
+                CommandCentreSingleton.getCommand(command.toLowerCase()).execute(cmdArgs);
             } else {
                 System.out.println("Goodbye!");
                 System.exit(0);
