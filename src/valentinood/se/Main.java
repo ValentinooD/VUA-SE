@@ -15,7 +15,6 @@ public class Main {
 
         EmployeeRepositoryFactory.getRepository().addEmployee(new Employee("Fantozzi", 0.10));
         EmployeeRepositoryFactory.getRepository().addEmployee(new Employee("Pierino", 0.11));
-        EmployeeRepositoryFactory.getRepository().addEmployee(new Employee("Mozart", 0.05));
 
         VehicleRepositoryFactory.getRepository().addVehicle(new LargeTrain());
         VehicleRepositoryFactory.getRepository().addVehicle(new LargeTrain());

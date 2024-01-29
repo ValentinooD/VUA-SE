@@ -15,7 +15,7 @@ public class DefaultEmployeeRepository implements EmployeeRepository {
 
     @Override
     public Optional<Employee> getEmployee(String name) {
-        return Optional.of(employees.get(name));
+        return Optional.of(employees.get(name.toLowerCase()));
     }
 
     @Override
