@@ -39,6 +39,6 @@ public class DefaultEmployeeRepository implements EmployeeRepository {
         Collections.shuffle(all);
 
         if (all.isEmpty()) return Optional.empty();
-        return Optional.of(all.getFirst());
+        return Optional.of(all.get(0));
     }
 }
